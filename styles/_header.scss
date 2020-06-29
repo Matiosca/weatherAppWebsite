@@ -1,0 +1,18 @@
+header {
+  background-color: $blueText;
+  .top-bar {
+    @include flexCenter();
+    .header-logo {
+      @include flexCenter();
+      text-transform: uppercase;
+      width: fit-content;
+    }
+    nav ul {
+      @include flexCenter();
+      padding: 0 20px;
+      li {
+        padding: 0 5px;
+      }
+    }
+  }
+}
