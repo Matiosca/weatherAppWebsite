@@ -1,0 +1,16 @@
+.review-section {
+  width: $pageWidth;
+  margin: 0 auto;
+  .reviews-h1 {
+    text-transform: uppercase;
+    color: $blueText;
+    text-align: center;
+    font-size: 30px;
+  }
+  .reviews-p {
+    text-align: center;
+    color: $greyText;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,42 @@
+.features-section {
+  width: $pageWidth;
+  margin: 50px auto;
+  .features-h1 {
+    text-transform: uppercase;
+    color: $blueText;
+    text-align: center;
+    font-size: 30px;
+  }
+  .features-p {
+    text-align: center;
+    color: $greyText;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .features-tabs {
+    @include flex(space-between);
+    margin: 80px 0 230px 0;
+    .feature-tab {
+      @include flex(space-between);
+      padding-right: 45px;
+      img {
+        margin-right: 25px;
+      }
+      .features-tab-text {
+        line-height: 25px;
+        .tab-title {
+          font-size: 19px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .tab-descr {
+          font-size: 14px;
+          color: $greyText;
+          &:hover {
+            color: $darkText;
+          }
+        }
+      }
+    }
+  }
+}

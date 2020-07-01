@@ -1,42 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 header {
-  background-color: #648cff;
+  background-image: url(../assets/header-bg.jpg);
+  background-size: 100% 100%;
 }
 
 header .top-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 15px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 header .top-bar .header-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-transform: uppercase;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 15%;
+  color: #ffffff;
+}
+
+header .top-bar .header-logo h3 {
+  font-size: 16px;
+}
+
+header .top-bar nav {
+  width: 60%;
+  padding: 0 30px 0 0;
 }
 
 header .top-bar nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -47,11 +51,266 @@ header .top-bar nav ul li {
   padding: 0 5px;
 }
 
+header .top-bar nav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e1e1e1;
+}
+
+header .top-bar nav ul li a:hover {
+  color: #ffffff;
+}
+
+header .top-bar .social {
+  width: 15%;
+}
+
+header .top-bar .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-bar .social ul li {
+  padding: 0 20px;
+}
+
+header .top-bar .social ul li a {
+  font-size: 23px;
+  color: #e1e1e1;
+}
+
+header .top-bar .social ul li a:hover {
+  color: #ffffff;
+}
+
+header .home-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+header .home-section .home-text {
+  width: 50%;
+}
+
+header .home-section .home-text .home-h1 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+header .home-section .home-text .home-p {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+header .home-section .home-text .home-btns {
+  margin-top: 50px;
+}
+
+header .home-section .home-text .home-btns .btn {
+  font-family: inherit;
+  border: 0;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+header .home-section .home-text .home-btns .down-btn {
+  background-color: #d9534f;
+  margin-right: 20px;
+}
+
+header .home-section .home-text .home-btns .feat-btn {
+  background-color: #337ab7;
+}
+
+header .home-section .home-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+header .home-section .home-img img {
+  width: 300px;
+}
+
+.features-section {
+  width: 60%;
+  margin: 50px auto;
+}
+
+.features-section .features-h1 {
+  text-transform: uppercase;
+  color: #648cff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.features-section .features-p {
+  text-align: center;
+  color: #999999;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.features-section .features-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px 0 230px 0;
+}
+
+.features-section .features-tabs .feature-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 45px;
+}
+
+.features-section .features-tabs .feature-tab img {
+  margin-right: 25px;
+}
+
+.features-section .features-tabs .feature-tab .features-tab-text {
+  line-height: 25px;
+}
+
+.features-section .features-tabs .feature-tab .features-tab-text .tab-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.features-section .features-tabs .feature-tab .features-tab-text .tab-descr {
+  font-size: 14px;
+  color: #999999;
+}
+
+.features-section .features-tabs .feature-tab .features-tab-text .tab-descr:hover {
+  color: #333333;
+}
+
+.screenshots-title {
+  text-transform: uppercase;
+  color: #648cff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.screenshots-p {
+  text-align: center;
+  color: #999999;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.screenshot-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+}
+
+.screenshot-tab .screen-phone-img {
+  max-height: 450px;
+  margin: 0 auto;
+}
+
+.screenshot-tab .screenshot-tab-descr {
+  width: 50%;
+  margin-left: auto;
+}
+
+.screenshot-tab .screenshot-tab-descr .screenshot-tab-title {
+  color: #648cff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 50px 0;
+}
+
+.screenshot-tab .screenshot-tab-descr .screenshot-tab-text {
+  color: #333333;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.review-section {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.review-section .reviews-h1 {
+  text-transform: uppercase;
+  color: #648cff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.review-section .reviews-p {
+  text-align: center;
+  color: #999999;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
 }
 
 ul {
@@ -60,5 +319,7 @@ ul {
 
 a {
   color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
