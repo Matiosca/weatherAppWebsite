@@ -1,6 +1,7 @@
 .review-section {
   width: $pageWidth;
-  margin: 0 auto;
+  margin: 150px auto 100px auto;
+  padding-top: 50px;
   .reviews-h1 {
     text-transform: uppercase;
     color: $blueText;
@@ -12,5 +13,30 @@
     color: $greyText;
     margin-top: 10px;
     font-size: 15px;
+  }
+  .reviews-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    .review {
+      padding: 35px;
+      position: relative;
+      .quotes {
+        color: $blueText;
+        font-size: 100px;
+      }
+      .close-q {
+        margin-left: 90%;
+      }
+      .review-text {
+        font-size: 20px;
+        color: $darkText;
+        line-height: 29px;
+      }
+      .review-author {
+        font-size: 15px;
+        color: $greyText;
+        margin-top: 20px;
+      }
+    }
   }
 }

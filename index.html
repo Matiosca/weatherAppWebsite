@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="top-bar">
         <div class="header-logo">
           <h3><a href="#">fun weather.</a></h3>
         </div>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Download</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#download">Download</a></li>
           </ul>
         </nav>
         <div class="social">
@@ -60,7 +60,7 @@
       </div>
     </header>
     <!-- features section -->
-    <div class="features-section">
+    <div class="features-section" id="features">
       <h1 class="features-h1">perfect features</h1>
       <p class="features-p">Only necessary</p>
       <div class="features-tabs">
@@ -133,77 +133,99 @@
       </div>
     </div>
     <!-- reviews section -->
-    <div class="review-section">
+    <div class="review-section" id="reviews">
       <h1 class="reviews-h1">What people are saying</h1>
       <p class="reviews-p">reviews</p>
       <!-- reviews tabs-->
       <div class="reviews-tabs">
         <!-- review 1 -->
-        <div class="review1">
+        <div class="review1 review">
+          <span class="quotes open-q">&ldquo;</span>
           <p class="review-text">
-            What art offers is space - a certain breathing room for the spirit.
+            	What art offers is space - a certain breathing room for the spirit.
           </p>
           <p class="review-author">John Updike</p>
+          <span class="quotes close-q">&rdquo;</span>
         </div>
         <!-- review 2 -->
-        <div class="review2">
+        <div class="review2 review">
+          <span class="quotes open-q">&ldquo;</span>
           <p class="review-text">
             What art offers is space - a certain breathing room for the spirit.
           </p>
           <p class="review-author">John Updike</p>
+          <span class="quotes close-q">&rdquo;</span>
         </div>
         <!-- review 3 -->
-        <div class="review3">
+        <div class="review3 review">
+          <span class="quotes open-q">&ldquo;</span>
           <p class="review-text">
             What art offers is space - a certain breathing room for the spirit.
           </p>
           <p class="review-author">John Updike</p>
+          <span class="quotes close-q">&rdquo;</span>
         </div>
         <!-- review 4 -->
-        <div class="review4">
+        <div class="review4 review">
+          <span class="quotes open-q">&ldquo;</span>
           <p class="review-text">
             What art offers is space - a certain breathing room for the spirit.
           </p>
           <p class="review-author">John Updike</p>
+          <span class="quotes close-q">&rdquo;</span>
         </div>
       </div>
     </div>
     <!-- download section -->
-    <div class="download-section">
-      <div class="download-text">
-        <h1 class="download-h1">How to download the app</h1>
-        <p class="download-p">
-          Just download the app from the store. Simple, nice and user-friendly
-          application of theweather. Only relevant and useful information.
-        </p>
-        <div class="download-buttons">
-          <button class="btn-appStore btn">App Store</button>
-          <button class="btn-google btn">Google Play</button>
+    <div class="download-section" id="download">
+      <div class="download-overlay">
+        <div class="download-text">
+          <h1 class="download-h1">How to download the app</h1>
+          <p class="download-p">
+            Just download the app from the store. Simple, nice and user-friendly
+            application of the weather. Only relevant and useful information.
+          </p>
+          <div class="download-buttons">
+            <img src="./assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" class="down-btn down-apple">
+            <img src="./assets/google-play-badge.png" alt="" class="down-btn down-google">
+          </div>
         </div>
-      </div>
-      <div class="download-img">
-        <img src="" alt="" />
       </div>
     </div>
     <!-- footer -->
     <footer>
       <div class="footer-links">
         <div class="footer-logo">
-          <h1 class="footer-logo-h1"></h1>
+          <p class="footer-logo-p"><span class="fun">Fun</span> 
+            <span class="weat">Weather.</span></p>
         </div>
         <div class="footer-nav">
           <ul class="footer-nav-ul">
-            <li class="footer-nav-li">Home</li>
-            <li class="footer-nav-li">Features</li>
-            <li class="footer-nav-li">Reviews</li>
-            <li class="footer-nav-li">Download</li>
+            <li class="footer-nav-li">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer-nav-li">
+              <a href="#features">Features</a>
+            </li>
+            <li class="footer-nav-li">
+              <a href="#reviews">Reviews</a>
+            </li>
+            <li class="footer-nav-li">
+              <a href="#download">Download</a>
+            </li>
           </ul>
         </div>
         <div class="footer-social">
           <ul class="footer-social-ul">
-            <li class="footer-social li">fa fb</li>
-            <li class="footer-social li">fa inst</li>
-            <li class="footer-social li">fa twitter</li>
+            <li class="footer-social-li">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="footer-social-li">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="footer-social-li">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
           </ul>
         </div>
       </div>

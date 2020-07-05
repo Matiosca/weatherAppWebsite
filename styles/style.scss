@@ -16,12 +16,15 @@ $pageWidth: 60%;
 @import "./features";
 @import "./screenshots";
 @import "./reviews";
+@import "./download";
+@import "./footer";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   cursor: default;
+  scroll-behavior: smooth;
 }
 
 body {

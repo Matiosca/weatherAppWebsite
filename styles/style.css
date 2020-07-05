@@ -165,7 +165,8 @@ header .home-section .home-img img {
 
 .features-section {
   width: 60%;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .features-section .features-h1 {
@@ -284,7 +285,8 @@ header .home-section .home-img img {
 
 .review-section {
   width: 60%;
-  margin: 0 auto;
+  margin: 150px auto 100px auto;
+  padding-top: 50px;
 }
 
 .review-section .reviews-h1 {
@@ -301,12 +303,175 @@ header .home-section .home-img img {
   font-size: 15px;
 }
 
+.review-section .reviews-tabs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+}
+
+.review-section .reviews-tabs .review {
+  padding: 35px;
+  position: relative;
+}
+
+.review-section .reviews-tabs .review .quotes {
+  color: #648cff;
+  font-size: 100px;
+}
+
+.review-section .reviews-tabs .review .close-q {
+  margin-left: 90%;
+}
+
+.review-section .reviews-tabs .review .review-text {
+  font-size: 20px;
+  color: #333333;
+  line-height: 29px;
+}
+
+.review-section .reviews-tabs .review .review-author {
+  font-size: 15px;
+  color: #999999;
+  margin-top: 20px;
+}
+
+.download-section {
+  background-color: #648cff;
+  position: relative;
+  height: 400px;
+  padding: 40px;
+}
+
+.download-section .download-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../assets/download-mobiles.png);
+  background-repeat: no-repeat;
+  background-position: right -20%;
+}
+
+.download-section .download-overlay .download-text {
+  width: 60%;
+  margin: 65px auto;
+  color: #ffffff;
+}
+
+.download-section .download-overlay .download-text .download-h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.download-section .download-overlay .download-text .download-p {
+  font-size: 14px;
+  line-height: 20px;
+  width: 50%;
+  margin: 50px 0 25px 0;
+}
+
+.download-section .download-overlay .download-text .download-buttons .down-btn {
+  width: 147px;
+}
+
+footer {
+  background: #353854;
+}
+
+footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 40px;
+  border-bottom: 1px solid #565b87;
+}
+
+footer .footer-links .footer-logo-p {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+footer .footer-links .footer-logo-p .fun {
+  color: #fc6a42;
+}
+
+footer .footer-links .footer-logo-p .weat {
+  color: #648cff;
+}
+
+footer .footer-links .footer-nav .footer-nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-links .footer-nav .footer-nav-ul .footer-nav-li {
+  color: #999999;
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+footer .footer-links .footer-nav .footer-nav-ul .footer-nav-li:hover {
+  color: #fff;
+}
+
+footer .footer-links .footer-social .footer-social-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-links .footer-social .footer-social-ul .footer-social-li {
+  color: #999999;
+  margin: 0 20px;
+  font-size: 23px;
+}
+
+footer .footer-links .footer-social .footer-social-ul .footer-social-li:hover {
+  color: #fff;
+}
+
+footer .coded-by {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer .coded-by .coded-by-p {
+  font-size: 18px;
+  color: #565b87;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: default;
+  scroll-behavior: smooth;
 }
 
 body {

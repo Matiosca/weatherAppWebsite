@@ -1,0 +1,36 @@
+.download-section {
+  background-color: $blueText;
+  position: relative;
+  height: 400px;
+  padding: 40px;
+  .download-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../assets/download-mobiles.png);
+    background-repeat: no-repeat;
+    background-position: right -20%;
+    .download-text {
+      width: $pageWidth;
+      margin: 65px auto;
+      color: #ffffff;
+      .download-h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .download-p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 50%;
+        margin: 50px 0 25px 0;
+      }
+      .download-buttons {
+        .down-btn {
+          width: 147px;
+        }
+      }
+    }
+  }
+}
