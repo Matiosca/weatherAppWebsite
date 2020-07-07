@@ -4,12 +4,19 @@ header {
   .top-bar {
     @include flex(space-between);
     padding-top: 15px;
-    width: $pageWidth;
     margin: 0 auto;
+    width: $pageWidth;
+    @include responsive(tab-land) {
+      width: 85%;
+      display: none;
+    }
     .header-logo {
       text-transform: uppercase;
       width: 15%;
       color: #ffffff;
+      @include responsive(tab-land) {
+        width: 100%;
+      }
       h3 {
         font-size: 16px;
       }
@@ -54,13 +61,33 @@ header {
     width: $pageWidth;
     margin: 0 auto;
     padding: 70px 0;
+    @include responsive(tab-land) {
+      width: 85%;
+    }
+    @include responsive(phone) {
+      flex-direction: column;
+      width: 100%;
+    }
     .home-text {
       width: 50%;
+      @include responsive(phone) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 80px;
+      }
       .home-h1 {
         color: #ffffff;
         font-size: 42px;
         font-weight: 700;
         line-height: 75px;
+        @include responsive(tab-land) {
+          font-size: 35px;
+        }
+        @include responsive(phone) {
+          font-size: 31px;
+          line-height: 44px;
+          margin-bottom: 10px;
+        }
       }
       .home-p {
         color: #ffffff;
@@ -93,6 +120,12 @@ header {
       width: 50%;
       img {
         width: 300px;
+        @include responsive(tab-land) {
+          width: 200px;
+        }
+        @include responsive(phone) {
+          width: 300px;
+        }
       }
     }
   }

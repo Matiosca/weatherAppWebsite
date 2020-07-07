@@ -2,6 +2,9 @@
   width: $pageWidth;
   margin: 150px auto 100px auto;
   padding-top: 50px;
+  @include responsive(tab-land) {
+    width: 85%;
+  }
   .reviews-h1 {
     text-transform: uppercase;
     color: $blueText;
@@ -17,9 +20,15 @@
   .reviews-tabs {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    @include responsive(phone) {
+      grid-template-columns: repeat(1, 100%);
+    }
     .review {
       padding: 35px;
       position: relative;
+      @include responsive(phone) {
+        padding: 5px 0;
+      }
       .quotes {
         color: $blueText;
         font-size: 100px;

@@ -6,6 +6,13 @@ footer {
     margin: 0 auto;
     padding: 50px 40px;
     border-bottom: 1px solid #565b87;
+    @include responsive(tab-port) {
+      flex-direction: column;
+    }
+    @include responsive(tab-land) {
+      width: 85%;
+      padding: 50px 0;
+    }
     .footer-logo-p {
       font-size: 25px;
       font-weight: 700;
@@ -17,6 +24,9 @@ footer {
       }
     }
     .footer-nav {
+      @include responsive(tab-port) {
+        margin: 40px auto;
+      }
       .footer-nav-ul {
         @include flex(space-between);
         .footer-nav-li {
@@ -36,6 +46,9 @@ footer {
           color: $greyText;
           margin: 0 20px;
           font-size: 23px;
+          @include responsive(tab-land) {
+            color: rgb(224, 224, 224);
+          }
           &:hover {
             color: #fff;
           }
@@ -48,6 +61,9 @@ footer {
     margin: 0 auto;
     text-align: center;
     padding: 50px 0;
+    @include responsive(tab-land) {
+      width: 85%;
+    }
     .coded-by-p {
       font-size: 18px;
       color: #565b87;

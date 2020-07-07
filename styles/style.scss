@@ -12,9 +12,9 @@ $pageWidth: 60%;
   align-items: center;
 }
 
+@import "./mediaQueries";
 @import "./header";
 @import "./features";
-@import "./screenshots";
 @import "./reviews";
 @import "./download";
 @import "./footer";

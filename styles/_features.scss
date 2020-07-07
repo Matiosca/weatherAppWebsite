@@ -2,6 +2,12 @@
   width: $pageWidth;
   margin: 0 auto;
   padding: 50px 0;
+  @include responsive(tab-land) {
+    width: 85%;
+  }
+  @include responsive(tab-port) {
+    padding-top: 90px;
+  }
   .features-h1 {
     text-transform: uppercase;
     color: $blueText;
@@ -17,11 +23,25 @@
   .features-tabs {
     @include flex(space-between);
     margin: 80px 0 230px 0;
+    @include responsive(tab-land) {
+      flex-direction: column;
+      margin: 80px 0 100px 0;
+    }
     .feature-tab {
       @include flex(space-between);
       padding-right: 45px;
+      @include responsive(tab-land) {
+        flex-direction: column;
+        text-align: center;
+        padding-right: 0px;
+        width: 50%;
+        margin-bottom: 40px;
+      }
       img {
         margin-right: 25px;
+        @include responsive(tab-land) {
+          margin: 0 auto 15px auto;
+        }
       }
       .features-tab-text {
         line-height: 25px;
@@ -38,6 +58,59 @@
           }
         }
       }
+    }
+  }
+  .screenshots-title {
+    text-transform: uppercase;
+    color: $blueText;
+    text-align: center;
+    font-size: 30px;
+  }
+  .screenshots-p {
+    text-align: center;
+    color: $greyText;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .screenshot-tab {
+    @include flex(center);
+    margin-top: 80px;
+    @include responsive(phone) {
+      margin-top: 100px;
+      flex-direction: column;
+    }
+    .screen-phone-img {
+      max-height: 450px;
+      margin: 0 auto;
+      @include responsive(tab-land) {
+        max-height: 400px;
+      }
+    }
+    .screenshot-tab-descr {
+      width: 50%;
+      margin-left: auto;
+      @include responsive(phone) {
+        width: 100%;
+        margin: 50px 0 0 0;
+        text-align: center;
+      }
+      .screenshot-tab-title {
+        color: $blueText;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 50px 0;
+      }
+      .screenshot-tab-text {
+        color: $darkText;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+  }
+  .screenshot2 {
+    @include responsive(phone) {
+      flex-direction: column-reverse;
     }
   }
 }

@@ -15,14 +15,27 @@ header .top-bar {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 15px;
-  width: 60%;
   margin: 0 auto;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1400px) {
+  header .top-bar {
+    width: 85%;
+    display: none;
+  }
 }
 
 header .top-bar .header-logo {
   text-transform: uppercase;
   width: 15%;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1400px) {
+  header .top-bar .header-logo {
+    width: 100%;
+  }
 }
 
 header .top-bar .header-logo h3 {
@@ -105,8 +118,32 @@ header .home-section {
   padding: 70px 0;
 }
 
+@media only screen and (max-width: 1400px) {
+  header .home-section {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .home-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 header .home-section .home-text {
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  header .home-section .home-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+  }
 }
 
 header .home-section .home-text .home-h1 {
@@ -114,6 +151,20 @@ header .home-section .home-text .home-h1 {
   font-size: 42px;
   font-weight: 700;
   line-height: 75px;
+}
+
+@media only screen and (max-width: 1400px) {
+  header .home-section .home-text .home-h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .home-section .home-text .home-h1 {
+    font-size: 31px;
+    line-height: 44px;
+    margin-bottom: 10px;
+  }
 }
 
 header .home-section .home-text .home-p {
@@ -163,10 +214,34 @@ header .home-section .home-img img {
   width: 300px;
 }
 
+@media only screen and (max-width: 1400px) {
+  header .home-section .home-img img {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .home-section .home-img img {
+    width: 300px;
+  }
+}
+
 .features-section {
   width: 60%;
   margin: 0 auto;
   padding: 50px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .features-section {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .features-section {
+    padding-top: 90px;
+  }
 }
 
 .features-section .features-h1 {
@@ -196,6 +271,16 @@ header .home-section .home-img img {
   margin: 80px 0 230px 0;
 }
 
+@media only screen and (max-width: 1400px) {
+  .features-section .features-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 80px 0 100px 0;
+  }
+}
+
 .features-section .features-tabs .feature-tab {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,8 +294,27 @@ header .home-section .home-img img {
   padding-right: 45px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .features-section .features-tabs .feature-tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-right: 0px;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+}
+
 .features-section .features-tabs .feature-tab img {
   margin-right: 25px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .features-section .features-tabs .feature-tab img {
+    margin: 0 auto 15px auto;
+  }
 }
 
 .features-section .features-tabs .feature-tab .features-tab-text {
@@ -232,21 +336,21 @@ header .home-section .home-img img {
   color: #333333;
 }
 
-.screenshots-title {
+.features-section .screenshots-title {
   text-transform: uppercase;
   color: #648cff;
   text-align: center;
   font-size: 30px;
 }
 
-.screenshots-p {
+.features-section .screenshots-p {
   text-align: center;
   color: #999999;
   margin-top: 10px;
   font-size: 15px;
 }
 
-.screenshot-tab {
+.features-section .screenshot-tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,17 +363,41 @@ header .home-section .home-img img {
   margin-top: 80px;
 }
 
-.screenshot-tab .screen-phone-img {
+@media only screen and (max-width: 600px) {
+  .features-section .screenshot-tab {
+    margin-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.features-section .screenshot-tab .screen-phone-img {
   max-height: 450px;
   margin: 0 auto;
 }
 
-.screenshot-tab .screenshot-tab-descr {
+@media only screen and (max-width: 1400px) {
+  .features-section .screenshot-tab .screen-phone-img {
+    max-height: 400px;
+  }
+}
+
+.features-section .screenshot-tab .screenshot-tab-descr {
   width: 50%;
   margin-left: auto;
 }
 
-.screenshot-tab .screenshot-tab-descr .screenshot-tab-title {
+@media only screen and (max-width: 600px) {
+  .features-section .screenshot-tab .screenshot-tab-descr {
+    width: 100%;
+    margin: 50px 0 0 0;
+    text-align: center;
+  }
+}
+
+.features-section .screenshot-tab .screenshot-tab-descr .screenshot-tab-title {
   color: #648cff;
   text-transform: uppercase;
   font-weight: 700;
@@ -277,16 +405,31 @@ header .home-section .home-img img {
   margin: 50px 0;
 }
 
-.screenshot-tab .screenshot-tab-descr .screenshot-tab-text {
+.features-section .screenshot-tab .screenshot-tab-descr .screenshot-tab-text {
   color: #333333;
   font-size: 14px;
   line-height: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .features-section .screenshot2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .review-section {
   width: 60%;
   margin: 150px auto 100px auto;
   padding-top: 50px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .review-section {
+    width: 85%;
+  }
 }
 
 .review-section .reviews-h1 {
@@ -310,9 +453,22 @@ header .home-section .home-img img {
       grid-template-columns: repeat(2, 50%);
 }
 
+@media only screen and (max-width: 600px) {
+  .review-section .reviews-tabs {
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+  }
+}
+
 .review-section .reviews-tabs .review {
   padding: 35px;
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .review-section .reviews-tabs .review {
+    padding: 5px 0;
+  }
 }
 
 .review-section .reviews-tabs .review .quotes {
@@ -354,10 +510,36 @@ header .home-section .home-img img {
   background-position: right -20%;
 }
 
+@media only screen and (max-width: 1400px) {
+  .download-section .download-overlay {
+    background-image: none;
+  }
+}
+
 .download-section .download-overlay .download-text {
   width: 60%;
   margin: 65px auto;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1400px) {
+  .download-section .download-overlay .download-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+    text-align: center;
+  }
 }
 
 .download-section .download-overlay .download-text .download-h1 {
@@ -370,6 +552,13 @@ header .home-section .home-img img {
   line-height: 20px;
   width: 50%;
   margin: 50px 0 25px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .download-section .download-overlay .download-text .download-p {
+    width: 80%;
+    margin: 50px auto;
+  }
 }
 
 .download-section .download-overlay .download-text .download-buttons .down-btn {
@@ -396,6 +585,22 @@ footer .footer-links {
   border-bottom: 1px solid #565b87;
 }
 
+@media only screen and (max-width: 900px) {
+  footer .footer-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  footer .footer-links {
+    width: 85%;
+    padding: 50px 0;
+  }
+}
+
 footer .footer-links .footer-logo-p {
   font-size: 25px;
   font-weight: 700;
@@ -407,6 +612,12 @@ footer .footer-links .footer-logo-p .fun {
 
 footer .footer-links .footer-logo-p .weat {
   color: #648cff;
+}
+
+@media only screen and (max-width: 900px) {
+  footer .footer-links .footer-nav {
+    margin: 40px auto;
+  }
 }
 
 footer .footer-links .footer-nav .footer-nav-ul {
@@ -449,6 +660,12 @@ footer .footer-links .footer-social .footer-social-ul .footer-social-li {
   font-size: 23px;
 }
 
+@media only screen and (max-width: 1400px) {
+  footer .footer-links .footer-social .footer-social-ul .footer-social-li {
+    color: #e0e0e0;
+  }
+}
+
 footer .footer-links .footer-social .footer-social-ul .footer-social-li:hover {
   color: #fff;
 }
@@ -458,6 +675,12 @@ footer .coded-by {
   margin: 0 auto;
   text-align: center;
   padding: 50px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  footer .coded-by {
+    width: 85%;
+  }
 }
 
 footer .coded-by .coded-by-p {

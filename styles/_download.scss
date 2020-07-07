@@ -12,10 +12,19 @@
     background-image: url(../assets/download-mobiles.png);
     background-repeat: no-repeat;
     background-position: right -20%;
+    @include responsive(tab-land) {
+      background-image: none;
+    }
     .download-text {
       width: $pageWidth;
       margin: 65px auto;
       color: #ffffff;
+      @include responsive(tab-land) {
+        @include flex(space-evenly);
+        flex-direction: column;
+        width: 85%;
+        text-align: center;
+      }
       .download-h1 {
         font-size: 30px;
         text-transform: uppercase;
@@ -25,6 +34,10 @@
         line-height: 20px;
         width: 50%;
         margin: 50px 0 25px 0;
+        @include responsive(tab-land) {
+          width: 80%;
+          margin: 50px auto;
+        }
       }
       .download-buttons {
         .down-btn {
