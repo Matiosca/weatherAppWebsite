@@ -6,54 +6,109 @@ header {
     padding-top: 15px;
     margin: 0 auto;
     width: $pageWidth;
+    position: relative;
     @include responsive(tab-land) {
       width: 85%;
-      display: none;
+    }
+    @include responsive(tab-port) {
+      flex-direction: column;
     }
     .header-logo {
       text-transform: uppercase;
       width: 15%;
       color: #ffffff;
-      @include responsive(tab-land) {
+      @include responsive(tab-port) {
         width: 100%;
       }
       h3 {
         font-size: 16px;
       }
     }
-    nav {
-      width: 60%;
-      padding: 0 30px 0 0;
-      ul {
-        @include flex(space-between);
-        padding: 0 20px;
-        li {
-          padding: 0 5px;
-          a {
-            font-size: 14px;
-            font-weight: 500;
-            color: $aBeforeHover;
-            &:hover {
-              color: #ffffff;
+    .hamburger {
+      position: absolute;
+      top: 15px;
+      right: 10%;
+      display: none;
+      @include responsive(tab-port) {
+        display: block;
+      }
+      .line {
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #fff;
+      }
+      .line-2 {
+        margin: 5px 0;
+      }
+    }
+    .links-top {
+      @include flex(space-between);
+      width: 85%;
+      @include responsive(tab-port) {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        border-top: 1px solid #cacaca;
+        display: none;
+      }
+      nav {
+        width: 100%;
+        @include responsive(tab-port) {
+          margin-top: 10px;
+          padding: 0;
+        }
+        ul {
+          @include flex(space-evenly);
+          padding: 0 20px;
+          @include responsive(tab-port) {
+            flex-direction: column;
+          }
+          li {
+            padding: 0 20px;
+            @include responsive(tab-port) {
+              margin-top: 20px;
+            }
+            a {
+              font-size: 14px;
+              font-weight: 500;
+              color: $aBeforeHover;
+              @include responsive(tab-port) {
+                color: #fff;
+              }
+              &:hover {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+      .social {
+        @include responsive(tab-port) {
+          width: 50%;
+          margin-top: 30px;
+        }
+        ul {
+          @include flex(space-between);
+          @include responsive(tab-port) {
+            justify-content: space-evenly;
+          }
+          li {
+            padding: 0 20px;
+            a {
+              font-size: 23px;
+              color: #fff;
+              i {
+                cursor: pointer;
+              }
             }
           }
         }
       }
     }
-    .social {
-      width: 15%;
-      ul {
-        @include flex(space-between) li {
-          padding: 0 20px;
-          a {
-            font-size: 23px;
-            color: $aBeforeHover;
-            &:hover {
-              color: #ffffff;
-            }
-          }
-        }
-      }
+    .show {
+      display: flex;
     }
   }
   .home-section {
@@ -67,6 +122,7 @@ header {
     @include responsive(phone) {
       flex-direction: column;
       width: 100%;
+      padding-top: 40px;
     }
     .home-text {
       width: 50%;
