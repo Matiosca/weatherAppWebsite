@@ -29,10 +29,16 @@ footer {
       }
       .footer-nav-ul {
         @include flex(space-between);
+        @include responsive(tab-port) {
+          flex-direction: column;
+        }
         .footer-nav-li {
           color: $greyText;
           margin: 0 20px;
           font-size: 14px;
+          @include responsive(tab-port) {
+            margin: 15px 0;
+          }
           &:hover {
             color: #fff;
           }

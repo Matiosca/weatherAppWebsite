@@ -3,6 +3,9 @@
   position: relative;
   height: 400px;
   padding: 40px;
+  @include responsive(phone) {
+    height: 500px;
+  }
   .download-overlay {
     position: absolute;
     top: 0;
@@ -40,8 +43,19 @@
         }
       }
       .download-buttons {
+        @include flex(flex-start);
+        @include responsive(phone) {
+          flex-direction: column;
+        }
         .down-btn {
           height: 49px;
+        }
+        .down-google {
+          margin-left: 20px;
+          @include responsive(phone) {
+            margin-left: 0px;
+            margin-top: 15px;
+          }
         }
       }
     }
